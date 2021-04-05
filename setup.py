@@ -4,9 +4,7 @@ from os import path as os_path
 import time
 this_directory = os_path.abspath(os_path.dirname(__file__))
 """帮助[https://www.notion.so/6bade2c6a5f4479f82a4e67eafcebb3a]
-
- 
-    """
+"""
 # 读取文件内容
 def read_file(filename):
     with open(os_path.join(this_directory, filename), encoding='utf-8') as f:
@@ -26,12 +24,12 @@ def read_requirements(filename):
 
 long_description=read_file("README.md")
 setup(
-    name='tkitDemo', #修改包名字
+    name='tkitLogger', #修改包名字
     version='0.0.0.1',
-    description='Terry toolkit tkitDemo',
+    description='Terry toolkit tkitLogger',
     author='Terry Chan',
     author_email='napoler2008@gmail.com',
-    url='http://www.terrychan.org/python_libs_demo/',
+    url='http://www.terrychan.org/tkitLogger/',
     install_requires=read_requirements('requirements.txt'),  # 指定需要安装的依赖
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -40,7 +38,7 @@ setup(
 
 
     # ],
-    packages=['Demo'])
+    packages=['tkitLogger'])
 
 """
 pip freeze > requirements.txt

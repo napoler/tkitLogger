@@ -5,8 +5,8 @@ import sys
 # 切换到上级目录
 sys.path.append("../")
 # 引入本地库
-import Demo
+import tkitLogger
 
-Demo =Demo.Demo()
-Demo.fun()
+Demo =tkitLogger.Logger()
+Demo.add("添加日志信息")
 
